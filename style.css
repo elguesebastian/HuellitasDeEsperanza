@@ -80,6 +80,7 @@ footer {
 .contenedor {
   width: 80%;
   margin: 0 auto;
+margin-top: 2rem;
 }
 
 .animales-contenedor {
@@ -89,7 +90,8 @@ footer {
 }
 
 .perrito {
-  width: 350px;
+margin-top: 2rem;
+  width: 15rem;
   margin-bottom: 20px;
   background-color: #fff;
   border-radius: 10px;
