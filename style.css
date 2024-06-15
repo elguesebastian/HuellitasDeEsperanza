@@ -98,48 +98,50 @@ a:visited {
 }
 
 /* seccion historia*/
-
+.contender-Historia{
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 10%;
+}
 .nosotros {
-  padding: 1rem;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
   background-color: #dddddd;
-  border-radius: 30px;
+  border-radius: 25px;
   display: flex;
-  justify-content: center;
-  width: 65%;
-  margin: 2rem auto;
+  text-align: center;
+  width: 63.5%;
+  min-height: 210px;
+  margin: 1rem ;
   flex-direction: column;
-  max-width: 800px;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
 }
 
 .nosotros p {
   margin-top: 0.25rem;
-}
-
-.mision, .vision {
   display: flex;
+  justify-content: flex-start;
 }
 
-.fotomision, .fotovision {
-  width: 40%;
-  height: 40%;
+.mision .vision {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.fotovision, .fotomision  {
+  width: 67.5%;
+  min-height: 275px;
+  max-height: 380px;
   border-radius: 30px;
-  margin-right: 5rem;
-  margin-left: 5rem;
+  margin: 1rem;
+  padding: 1rem;
 }
 
-.titulovision {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.titulovision,
-.titulomision {
+.titulovision, .titulomision {
   font-size: 2rem;
-}
-
-.nosotros img {
-  display: flex;
+  margin: 1rem;
 }
 
 /*Seccion contacto*/
