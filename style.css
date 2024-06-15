@@ -56,31 +56,12 @@ a:visited {
   color: black;
 }
 
-/* Footer */
-
-footer {
-  background-color: #d4b7b7;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-flow: wrap;
-  padding: 1rem;
-  margin-top: auto;
-}
-
-.footerBar {
-  font-size: 0.75rem;
-  list-style: none;
-  display: inline;
-  padding: 0.75rem;
-}
-
 /* seccion Animales*/
 
 .contenedor {
   width: 80%;
   margin: 0 auto;
-margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .animales-contenedor {
@@ -90,7 +71,7 @@ margin-top: 2rem;
 }
 
 .perrito {
-margin-top: 2rem;
+  margin-top: 2rem;
   width: 15rem;
   margin-bottom: 20px;
   background-color: #fff;
@@ -116,64 +97,135 @@ margin-top: 2rem;
   margin: 0;
 }
 
-/*area contacto*/
+/* seccion historia*/
+
+.nosotros {
+  padding: 1rem;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  background-color: #dddddd;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  width: 65%;
+  margin: 2rem auto;
+  flex-direction: column;
+  max-width: 800px;
+}
+
+.nosotros p {
+  margin-top: 0.25rem;
+}
+
+.mision, .vision {
+  display: flex;
+}
+
+.fotomision, .fotovision {
+  width: 40%;
+  height: 40%;
+  border-radius: 30px;
+  margin-right: 5rem;
+  margin-left: 5rem;
+}
+
+.titulovision {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.titulovision,
+.titulomision {
+  font-size: 2rem;
+}
+
+.nosotros img {
+  display: flex;
+}
+
+/*Seccion contacto*/
+
 .section-title {
-	text-align: center;
-	padding: 25px 0;
+  text-align: center;
+  padding: 25px 0;
 }
 .section-title h2 {
-	font-size: 60px;
-	text-transform: uppercase;
-	font-family: oswald;
-	font-weight: 700;
-	text-shadow: 0 1px 2px rgba(0, 0, 0.1);
+  font-size: 60px;
+  text-transform: uppercase;
+  font-family: oswald;
+  font-weight: 700;
+  text-shadow: 0 1px 2px rgba(0, 0, 0.1);
 }
 .section-title h2 span {
-	color: #d4b7b7;
+  color: #d4b7b7;
 }
-.row2{
+.row2 {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
-.data{
+.data {
   margin-bottom: 5%;
 }
+
+.data h2 {
+  margin-bottom: 0.25rem;
+  margin-top: 0.35rem;
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;
 }
-.name-email{
+.name-email {
   height: 2rem;
   width: 50%;
 }
-.form-group{
-  width:100%
-}
-.form-control{
+.form-group {
   width: 100%;
-  height:4rem;
+}
+.form-control {
+  width: 100%;
+  height: 4rem;
 }
 .contact-form .btn {
   width: 100%;
-	background: #d4b7b7;
-	text-transform: uppercase;
-	font-weight: 700;
-	padding: 10px 50px;
-	letter-spacing: 2px;
+  background: #d4b7b7;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 10px 50px;
+  letter-spacing: 2px;
 }
 .map-area {
- display: flex;
- align-items: center;
-	width: 600px;
-	height: 465px;
-	background: #fff;
-	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  align-items: center;
+  width: 600px;
+  height: 465px;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   margin-bottom: 10%;
 }
 
 .map-area iframe {
-	width: 100%;
-	height: 100%;
-	border: none;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Footer */
+
+footer {
+  background-color: #d4b7b7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: wrap;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+.footerBar {
+  font-size: 0.75rem;
+  list-style: none;
+  display: inline;
+  padding: 0.75rem;
 }
