@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const targetHeaders = document.querySelectorAll('h2.night-mode-target'); // Selecciona solo los h2 con la clase night-mode-target
     const visionTitles = document.querySelectorAll('.titulovision');
     const missionTitles = document.querySelectorAll('.titulomision');
-    const logo = document.querySelector('.logo img'); // Logo
 
     // Obtener el estado actual del modo desde el almacenamiento local del navegador
     const nightModeState = localStorage.getItem('nightMode') === 'true';
@@ -32,7 +31,6 @@ document.addEventListener('DOMContentLoaded', function () {
         targetHeaders.forEach(header => header.classList.toggle('night-mode')); // Aplica night-mode solo a los h2 con la clase night-mode-target
         visionTitles.forEach(title => title.classList.toggle('night-mode')); // Aplica night-mode a los títulos de visión
         missionTitles.forEach(title => title.classList.toggle('night-mode')); // Aplica night-mode a los títulos de misión
-        logo.src = nightModeEnabled ? "img/huella_blanca.png" : "img/huella_perro.svg"; // Cambiar la imagen del logo según el modo
 
         // Guardar el estado del modo en el almacenamiento local del navegador
         localStorage.setItem('nightMode', nightModeEnabled);
