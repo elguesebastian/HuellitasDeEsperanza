@@ -130,6 +130,7 @@ a:visited {
 .fotomision, .fotovision {
   width: 34%;
   border-radius: 30px;
+  margin: 0 1rem;
 }
 
 .titulovision,
@@ -137,11 +138,9 @@ a:visited {
   font-size: 2rem;
 }
 
-.contenedor-fundacion{
-display: flex;
-justify-content: center;
-text-align: center;
-align-items: center;
+.contenedor-fundacion {
+  display: flex;
+  justify-content: center;
 }
 
 .fundacion {
@@ -153,7 +152,7 @@ align-items: center;
   font-size: 2vh;
   border-radius: 30px;
   display: flex;
-  width: 68%;
+  width: 63%;
   padding: 2rem;
   margin: 2rem;
   text-align: center;
@@ -162,6 +161,21 @@ align-items: center;
 
 .fundacion p {
   padding: 0.5rem;
+}
+
+@media (max-width: 1200px) {
+  .mision {
+    flex-direction: column;
+    max-width: 80%;
+  }
+  .vision {
+    flex-direction: column-reverse;
+    max-width: 80%;
+  }
+  .fotomision,.fotovision{
+  margin: 1rem;
+  width: 80%;
+  }
 }
 
 
