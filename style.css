@@ -36,7 +36,6 @@ header {
 
 .nav-bar ul li a:hover {
   color: #fefefe;
-  background: #d4b7b7;
 }
 
 .nav-bar ul li a.active {
@@ -130,6 +129,7 @@ a:visited {
 .fotomision, .fotovision {
   width: 34%;
   border-radius: 30px;
+  margin: 0 1rem;
 }
 
 .titulovision,
@@ -137,11 +137,9 @@ a:visited {
   font-size: 2rem;
 }
 
-.contenedor-fundacion{
-display: flex;
-justify-content: center;
-text-align: center;
-align-items: center;
+.contenedor-fundacion {
+  display: flex;
+  justify-content: center;
 }
 
 .fundacion {
@@ -153,7 +151,7 @@ align-items: center;
   font-size: 2vh;
   border-radius: 30px;
   display: flex;
-  width: 68%;
+  width: 63%;
   padding: 2rem;
   margin: 2rem;
   text-align: center;
@@ -162,6 +160,21 @@ align-items: center;
 
 .fundacion p {
   padding: 0.5rem;
+}
+
+@media (max-width: 1200px) {
+  .mision {
+    flex-direction: column;
+    max-width: 80%;
+  }
+  .vision {
+    flex-direction: column-reverse;
+    max-width: 80%;
+  }
+  .fotomision,.fotovision{
+  margin: 1rem;
+  width: 80%;
+  }
 }
 
 
@@ -208,17 +221,21 @@ align-items: center;
 .contact-form {
   display: flex;
   flex-direction: column;
+
 }
 .name-email {
   height: 2rem;
   width: 50%;
 }
+
 .form-group {
-  width: 100%;
+  width: 98%;
 }
+
 .form-control {
   width: 100%;
   height: 4rem;
+
 }
 .contact-form .btn {
   width: 100%;
@@ -244,29 +261,10 @@ align-items: center;
   border: none;
 }
 
-/* Footer */
-
-footer {
-  background-color: #d4b7b7;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-flow: wrap;
-  padding: 1rem;
-  margin-top: auto;
-}
-
-.footerBar {
-  font-size: 0.75rem;
-  list-style: none;
-  display: inline;
-  padding: 0.75rem;
-}
-
 /* Seccion donaciones*/
+
 .pricing-area {
-	padding: 20px 0;
-  padding-bottom: 60px;
+	padding: 80px 0;
 }
 .single-price {
 	padding-bottom: 25px;
@@ -403,3 +401,77 @@ footer {
 		font-size: 22px;
 	}
 }
+
+/* Footer */
+
+footer {
+  background-color: #d4b7b7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: wrap;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+.footerBar {
+  font-size: 0.75rem;
+  list-style: none;
+  display: inline;
+  padding: 0.75rem;
+}
+
+/* Estilos para el modo noche */
+
+body.night-mode {
+  background-color: #313131;
+  color: white;
+}
+
+header.night-mode,
+footer.night-mode {
+  background-color: #1f1f1f; /* Color de fondo nocturno para header y footer */
+  color: white; /* Color de texto nocturno para header, footer, enlaces y párrafos seleccionados */
+}
+
+a.night-mode {
+  color: white;
+  background-color: transparent; /* Fondo transparente para enlaces en modo nocturno */
+}
+
+a.night-mode:hover,
+a.night-mode:active,
+a.night-mode:focus {
+  color: #818181; /* Color del enlace nocturno al pasar el cursor */
+  background-color: transparent; /* Mantener el fondo transparente al pasar el cursor */
+}
+
+h2.night-mode,
+p.night-mode {
+  color: black; /* Color de texto nocturno para h2 */
+}
+
+.titulovision.night-mode,
+.titulomision.night-mode {
+  color: black; /* Color de texto nocturno para los títulos de visión y misión */
+}
+
+/* Estilos del botón */
+#toggle-mode {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 20px;
+  cursor: pointer;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: inherit;
+  transition: color 0.3s;
+  display: flex;
+}
+
+#toggle-mode:hover {
+  color: #ffc107; /* Color dorado para el hover */
+}
+
