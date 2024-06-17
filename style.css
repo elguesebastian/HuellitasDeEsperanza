@@ -19,40 +19,36 @@ header {
 }
 
 .nombrePagina {
-  padding: 1rem;
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+  font-weight: 500;
 }
 
+#ulNavBar {
+  margin: 0;
+  padding: 0;
+}
 .navBar {
-  font-size: 1rem;
   display: inline;
-  padding: 1rem;
-}
-
-.nav-bar {
-  color: #fefefe;
-  border-radius: 50px;
-  transition: 0.2s;
-}
-
-.nav-bar ul li a:hover {
-  color: #fefefe;
-}
-
-.nav-bar ul li a.active {
-  color: #fefefe;
-  background: #d4b7b7;
+  padding: 0.5rem;
 }
 
 a {
-  color: rgb(14, 13, 13); /*para que se cambie de color a gris*/
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 a:hover {
-  color: gray;
+  color: white !important;
 }
 a:visited {
   color: black;
+}
+
+
+p {
+  margin: 0;
+  padding: 0;
 }
 
 /* seccion Animales*/
@@ -177,82 +173,75 @@ a:visited {
   }
 }
 
-
 /*Seccion contacto*/
 
 .section-title {
   text-align: center;
-  padding: 25px 0;
-  margin-bottom: 2rem;
 }
 
-.contenedor-contacto {
-  margin-bottom: 3rem;
-}
 
 .section-title h2 {
-  font-size: 60px;
-  text-transform: uppercase;
-  font-family: oswald;
+  font-size: 5rem;
   font-weight: 700;
-  text-shadow: 0 1px 2px rgba(0, 0, 0.1);
+  color: #d4b7b7;
+  padding-top: 3rem;
 }
 
-.section-title h2 span {
-  color: #d4b7b7;
+.row {
+  margin: 0;
+  padding: 0;
 }
+
 
 .row2 {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
-}
-
-.data {
-  margin-bottom: 5%;
+  padding: 3rem;
 }
 
 .data h2 {
-  margin-bottom: 0.25rem;
-  margin-top: 0.35rem;
+  margin: 0;
+  padding: 0;
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
-
 }
+
+#form {
+  width: 50%
+}
+
 .name-email {
-  height: 2rem;
-  width: 50%;
+  border-radius: 10px;
+  border: 1px solid black;
 }
 
 .form-group {
-  width: 98%;
+  padding-bottom: 1rem;
 }
 
 .form-control {
-  width: 100%;
-  height: 4rem;
+  border-radius: 10px;
+  border: 1px solid black;
 
 }
 .contact-form .btn {
   width: 100%;
   background: #d4b7b7;
-  text-transform: uppercase;
   font-weight: 700;
-  padding: 10px 50px;
-  letter-spacing: 2px;
+  padding: 1rem
 }
 .map-area {
   display: flex;
   align-items: center;
-  width: 600px;
-  height: 465px;
+  max-width: 600px;
+  height: 500px;
   background: #fff;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  margin-bottom: 10%;
 }
 
 .map-area iframe {
@@ -264,7 +253,7 @@ a:visited {
 /* Seccion donaciones*/
 
 .pricing-area {
-	padding: 70px 0;
+  padding: 3rem;
 }
 .single-price {
 	padding-bottom: 25px;
@@ -419,6 +408,7 @@ footer {
   list-style: none;
   display: inline;
   padding: 0.75rem;
+  font-weight: 500;
 }
 
 /* Estilos para el modo noche */
